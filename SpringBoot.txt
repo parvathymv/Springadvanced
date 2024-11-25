@@ -1,0 +1,74 @@
+
+SpringBoot
+Spring JPA
+Spring REST API
+
+Spring tool suite
+
+
+Spring.io->
+
+Spring Boot is an open source Java-based framework used to create a Micro Service. It is developed by Pivotal Team. It is easy to create a stand-alone and production ready spring applications using Spring Boot. Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”.
+
+Spring 
+spring-core
+spring-beans
+spring-jdbc
+
+Advantages
+Spring Boot offers the following advantages to its developers −
+
+Easy to understand and develop spring applications
+Increases productivity
+Reduces the development time
+
+Goals
+Spring Boot is designed with the following goals −
+
+To avoid complex XML configuration in Spring
+To develop a production ready Spring applications in an easier way
+To reduce the development time and run the application independently
+Offer an easier way of getting started with the application
+
+Spring Boot automatically configures your application based on the dependencies you have added to the project by using @EnableAutoConfiguration annotation.
+The entry point of the spring boot application is the class contains @SpringBootApplication annotation and the main method.
+
+Spring Boot automatically scans all the components included in the project by using @ComponentScan annotation.
+
+spring-boot-starter- *, where * indicates that it is a type of the application.
+provides a flexible way to configure Java Beans, XML configurations, and Database Transactions.
+
+It provides a powerful batch processing and manages REST endpoints.
+
+In Spring Boot, everything is auto configured; no manual configurations are needed.
+
+It offers annotation-based spring application
+
+Eases dependency management
+
+It includes Embedded Servlet Container
+
+A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer and was created by computer scientist Roy Fielding.
+
+RESTful web services are built to work best on the Web. ... In the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web. The resources are acted upon by using a set of simple, well-defined operations.
+
+
+Eureka Server is an application that holds the information about all client-service applications. Every Micro service will register into the Eureka server and Eureka server knows all the client applications running on each port and IP address. Eureka Server is also known as Discovery Server.
+
+REST stands for Representational State Transfer. It's an architectural pattern for creating web services. A RESTful service is one that implements that pattern. 
+
+
+
+
+
+mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
+
+
+
+
+
+
+
+
+https://springframework.guru/exception-handling-in-spring-boot-rest-api/
+https://www.geeksforgeeks.org/spring-rest-xml-response/
