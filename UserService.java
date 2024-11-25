@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.test.springwservice.entity.User;
 import com.test.springwservice.repository.UserRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class UserService {
 	@Autowired
@@ -18,7 +20,7 @@ public class UserService {
 		return userRepo.save(user);
 		
 	}
-	public List<User> getAllUser() {
+	public List<User> getAllUsers() {
 		
 		return userRepo.findAll();
 	}
@@ -48,6 +50,30 @@ public class UserService {
 		}
 		return result;
 		
+	}
+	public List<User> findUsersNameStartingWith(String prefix) {
+		
+		return userRepo.findByNameStartingWith(prefix);
+	}
+	public List<User> findUsersNameEndingWith(String suffix) {
+		
+		return userRepo.findByNameEndingWith(suffix);
+	}
+	public User getUserByEmail(String email) {
+		// TODO Auto-generated method stub
+		return userRepo.getUserByEmail(email);
+	}
+	@Transactional
+	public String updateUserByName(String email, String name) {
+		// TODO Auto-generated method stub
+		String result="Not updated";
+		int res=userRepo.updateUserByName(email, name);
+		if(res>0)
+		{
+			result="User details updated successfuuly";
+		}
+		
+			return result; 
 	}
 
 }
